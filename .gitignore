@@ -1,0 +1,11 @@
+/server/node_modules
+/server/dist
+/server/.env
+/client/node_modules
+/client/.cache
+/client/.next
+/client/.npm
+/admin/node_modules
+/admin/.cache
+/admin/.next
+/admin/.npm

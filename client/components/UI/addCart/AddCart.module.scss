@@ -1,0 +1,26 @@
+.cartControls{
+	display: flex;
+	flex-wrap: nowrap;
+	column-gap: 2rem;
+	margin-top: auto;
+
+	.addCart{
+		background: var(--main-efect);
+		padding: 5px 15px;
+		border-radius: 3px;
+		color: var(--bg-dark);
+		transition:all .6s ease;
+		cursor: pointer;
+
+		&:hover{
+			box-shadow: 2px 2px 4px rgba(0,0,0,.4);
+		}
+	}
+
+	button{
+		font-size: 1.8rem;
+		font-weight: 600;
+		font-family: var(--font-sofia-sans);
+	}
+
+}

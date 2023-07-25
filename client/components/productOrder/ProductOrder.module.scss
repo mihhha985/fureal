@@ -1,0 +1,63 @@
+.quantityBox{
+	display: flex;
+	column-gap: 1rem;
+	align-items: center;
+
+	label{
+		font-size: large;
+	}
+
+	input{
+		width: 60px;
+		padding: 10px;
+		border-radius: 8px;
+		border: 1px solid var(--main-efect);
+		font-size: large;
+		color: var(--main-efect);
+		background: transparent;
+	}
+}
+
+.deliveryBox{
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	
+	h6{
+		font-size: large;
+	}
+
+	label{
+		font-size: small;
+		position: relative;
+		bottom:1px;
+		left:5px;
+	}
+}
+
+.orderControl{
+	display: flex;
+	column-gap: 1rem;
+	margin-top: auto;
+
+	.addCart{
+		background: transparent;
+    color: var(--main-efect);
+		border: 2px solid var(--main-efect);;
+		padding: 5px 15px;
+		border-radius: 3px;
+		transition:all .2s ease;
+		cursor: pointer;
+
+		&:hover{
+			background: var(--main-efect);
+			color: var(--bg-dark);
+		}
+	}
+
+	button{
+		font-size: 1.8rem;
+		font-weight: 600;
+		font-family: var(--font-sofia-sans);
+	}
+}

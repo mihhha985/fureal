@@ -1,0 +1,32 @@
+.deleveryBox{
+	padding: 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.8);
+
+	.border{
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		margin-top: 1rem;
+	}
+
+	h4{
+		font-size: x-large;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+	}
+
+	p{
+		font-size: medium;
+		color: var(--second-text-color);
+	}
+
+	hr{
+		color: var(--main-efect);
+	}
+}

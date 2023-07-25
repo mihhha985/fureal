@@ -1,0 +1,68 @@
+.contactBox{
+	display: flex;
+	justify-content: space-between;
+
+	.recvezit{
+		width: 30%;
+		padding: 2rem;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background: rgba(0, 0, 0, 0.4);
+		border-radius: 15px;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		border-left: 1px solid rgba(255, 255, 255, 0.2);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		border-right: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.8);
+
+		p{
+			font-size: 1.8rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.map{
+		width: 64%;
+		border-radius: 15px;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		border-left: 1px solid rgba(255, 255, 255, 0.2);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		border-right: 1px solid rgba(255, 255, 255, 0.1);
+		overflow: hidden;
+		
+		iframe{
+			display: block;
+		}
+	}
+}
+
+@media (max-width:1280px){
+	.contactBox{
+		display: flex;
+		justify-content: space-between;
+
+		.recvezit{
+			width: 34%;
+		}
+
+		.map{
+			width: 64%;
+		}
+	}
+}
+
+@media (max-width:992px){
+	.contactBox{
+		display: flex;
+		flex-direction: column;
+		row-gap: 4rem;
+
+		.recvezit{
+			width: 100%;
+		}
+
+		.map{
+			width: 100%;
+		}
+	}
+}

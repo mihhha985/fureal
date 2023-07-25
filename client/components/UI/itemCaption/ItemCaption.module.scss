@@ -1,0 +1,43 @@
+.itemPrice{
+	color: var(--text-color);
+	width: 90%;
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	white-space: nowrap;
+
+	span{
+		opacity: .8;
+		position: relative;
+		top:2px;
+		left: 10px;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+}
+
+.descriptionBox{
+	width: 240px;
+	padding: 5px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.8);
+	color: var(--second-text-color);
+	position: absolute;
+	bottom: 120%;
+
+	p{
+		font-size: small;
+	}
+
+	h4{
+		font-size: small;
+	}
+}

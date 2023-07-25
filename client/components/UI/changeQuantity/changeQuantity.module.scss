@@ -1,0 +1,19 @@
+.cartQuantity{
+	display: flex;
+	align-items: center;
+	column-gap: 1rem;
+
+	input {
+    width: 60px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--main-efect);
+    font-size: large;
+    color: var(--main-efect);
+    background: transparent;
+	}
+
+	label{
+		font-size: large;
+	}
+}

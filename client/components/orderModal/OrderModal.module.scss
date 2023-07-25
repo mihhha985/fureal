@@ -1,0 +1,239 @@
+.orderModalBox{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	z-index: 1000;
+	overflow: hidden;
+
+	.modalContent{
+		width: 380px;
+		height: 460px;
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: var(--bg-dark);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 20px;
+		box-shadow:4px 4px 15px rgba(0,0,0,.8);
+		padding: 25px 45px;
+
+		.orderForm{
+
+			.inputBox{
+				padding-bottom: 25px;
+				position: relative;
+
+				.error{
+					position: absolute;
+					bottom: 8px;
+					left: 0;
+					color: var(--second-efect);
+					font-size: x-small;
+				}
+
+				label{
+					font-size: medium;
+					color: var(--text-color);
+					position: relative;
+					bottom: 5px;
+				}
+
+				input{
+					width: 100%;
+					padding: 10px 10px;
+					font-size: large;
+					background: var(--second-text-color);
+					color: var(--bg-dark);
+					border-radius: 5px;
+				}
+
+				textarea{
+					width: 100%;
+					padding: 10px 10px;
+					font-size: large;
+					background: var(--second-text-color);
+					color: var(--bg-dark);
+					border-radius: 5px;
+					resize: none;
+				}
+			}
+
+			h4{
+				font-size: 2.4rem;
+				color: var(--text-color);
+				margin-bottom: 2rem;
+			}
+		}
+
+		.emptyOrder{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+
+			h4{
+				font-size: 2.4rem;
+				color: var(--second-text-color);
+				margin-bottom: 2rem;
+			}
+
+			p{
+				font-size: 1.8rem;
+			}
+		}
+
+		.orderList{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			row-gap: 2rem;
+			height: 100%;
+			width: 100%;
+
+			h3{
+				font-size: 2.4rem;
+				color: var(--text-color);
+			}
+
+			.orderItemsBox{
+				width: 100%;
+				height: 360px;
+				overflow-y: auto;
+				display: flex;
+				flex-direction: column;
+				row-gap: 1rem;
+
+				h4{
+					font-size: 18px;
+					text-align: right;
+					margin-top: 2rem;
+				}
+
+				.orderItem{
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					row-gap: 10px;
+					border-bottom: 1px dotted var(--text-color);
+
+					p{
+						max-width: 90%;
+						overflow: hidden;
+						text-overflow: ellipsis; 
+						white-space: nowrap;
+						font-size: 16px;
+						color: var(--second-text-color);
+					}
+
+					.itemPrice{
+						width: 100%;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						font-size: 12px;
+						padding-bottom: 5px;
+					}
+				}
+			}
+		}
+
+		button{
+			width: 100%;
+			font-size: 2rem;
+			font-family: var(--font-sofia-sans);
+			color: var(--bg-dark);
+			background: var(--main-efect);
+			padding: 0.6rem 2rem;
+			border: 2px solid var(--main-efect);
+			border-radius: 8px;
+			margin-top: auto;
+			cursor: pointer;
+			transition: all 0.5s ease;
+			align-self: center;
+
+			&:hover{
+				background: transparent;
+				color: var(--main-efect);
+			}
+		}
+	}
+}
+
+@media (max-width:480px){
+	.orderModalBox{
+		.modalContent{
+			width: 320px;
+			height: 420px;
+			padding: 25px;
+
+			.orderForm{
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				row-gap: 1rem;
+				justify-content: space-between;
+
+				.inputBox{
+					padding-bottom: 25px;
+					position: relative;
+	
+					.error{
+						position: absolute;
+						bottom: 8px;
+						left: 0;
+						color: var(--second-efect);
+						font-size: x-small;
+					}
+	
+					label{
+						font-size: 1.4rem;
+						color: var(--text-color);
+						position: relative;
+						bottom: 5px;
+					}
+	
+					input{
+						width: 100%;
+						padding: 10px;
+						font-size: 1.6rem;
+						background: var(--second-text-color);
+						color: var(--bg-dark);
+						border-radius: 5px;
+					}
+	
+					textarea{
+						width: 100%;
+						padding: 10px;
+						font-size: 1.6rem;
+						background: var(--second-text-color);
+						color: var(--bg-dark);
+						border-radius: 5px;
+						resize: none;
+					}
+				}
+	
+				h4{
+					font-size: 2rem;
+					color: var(--text-color);
+					margin-bottom: 2rem;
+				}
+			}
+	
+		}
+	}
+}
+
+@media (max-width:360px){
+	.orderModalBox{
+		.modalContent{
+			width: 300px;
+			height: 400px;
+			padding: 20px;
+		}
+	}
+}
