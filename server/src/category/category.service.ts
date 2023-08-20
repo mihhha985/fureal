@@ -17,11 +17,11 @@ export class CategoryService {
 		await this.categoryRepository.save(category);
   }
 
-  findAll() {
+  findAll():Promise<Category[]> {
     return this.categoryRepository.find();
   }
 
-  findOne(id: number) {
+  findOne(id: number):Promise<Category> {
     return this.categoryRepository.findOneBy({id});
   }
 	
@@ -29,7 +29,7 @@ export class CategoryService {
     return await this.categoryRepository.update(id, dto);
   }
 
-  async remove(id: number) {
-    return await this.categoryRepository.delete(id);
-  }
+	async setStatus(id: number, status: boolean):Promise<void>{
+		await this.categoryRepository.update(id, {isActive: !status});
+	}
 }

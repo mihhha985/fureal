@@ -9,3 +9,8 @@ export interface ICreateCategory {
 	name: string;
   order?:number;
 }
+
+export interface ICategorySelected{
+	id?:number;
+	label?:string;
+}
